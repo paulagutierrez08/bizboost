@@ -1,3 +1,84 @@
+/* global */
+:root {
+  /* --baseFont: 16px; */
+  --primary-font: "Poppins";
+  --secondary-font: "Courier";
+  --white: #fff;
+  --primary-bg: #0a0c11;
+  --primary-text: #ababd3;
+  --primary-color: #2292b1;
+  --secondary-color: #1b3385;
+  --terciary-color: #25c5c9;
+  --link-color: #abadb3;
+  --link-hover: #2292b1;
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  color: white;
+  background: var(--primary-bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 2.7em;
+  font-weight: var(--medium);
+  line-height: 4.3em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: var(--medium);
+  line-height: 2.85em;
+}
+
+h3 {
+  font-size: 1.47em;
+  font-weight: var(--medium);
+  line-height: 1.92em;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: var(--bold);
+  line-height: 1.92em;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: var(--bold);
+  line-height: 1.6em;
+}
+
+h6 {
+  font-size: 1.44em;
+  font-weight: var(--semi-bold);
+  line-height: 1.4em;
+}
+
+h7 {
+  font-size: 1em;
+  font-weight: var(--normal);
+  line-height: 1.75em;
+}
+
+span {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: var(--normal);
+  line-height: 1.75em;
+}
 /*=======================================
     #Variables
 =========================================*/
