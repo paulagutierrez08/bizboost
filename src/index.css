@@ -79,6 +79,31 @@ span {
   font-weight: var(--normal);
   line-height: 1.75em;
 }
+
+a {
+  color: var(--white);
+  font-family: var(--secondary-font);
+  font-weight: var(--medium);
+}
+
+header {
+  background-color: var(--primary-bg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+}
+
+nav li ul {
+  display: none;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 0;
+}
 /*=======================================
     #Variables
 =========================================*/
