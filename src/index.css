@@ -1,14 +1,14 @@
 /* global */
 :root {
-  /* --baseFont: 16px; */
+  --baseFont: 20px;
   --primary-font: "Poppins";
   --secondary-font: "Courier";
   --white: #fff;
   --primary-bg: #0a0c11;
   --primary-text: #ababd3;
   --primary-color: #2292b1;
-  --secondary-color: #1b3385;
-  --terciary-color: #25c5c9;
+  --gradient-star: #1b3385;
+  --gradient-end: #25c5c9;
   --link-color: #abadb3;
   --link-hover: #2292b1;
   --normal: 400;
@@ -17,11 +17,11 @@
   --bold: 700;
 }
 
-body {
+html {
   box-sizing: border-box;
   font-family: var(--primary-font);
   font-size: 1em;
-  color: white;
+  color: var(--link-color);
   background: var(--primary-bg);
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 h1 {
-  font-size: 2.7em;
+  font-size: 4.7em;
   font-weight: var(--medium);
   line-height: 4.3em;
 }
@@ -67,11 +67,11 @@ h6 {
   line-height: 1.4em;
 }
 
-h7 {
+/* h7 {
   font-size: 1em;
   font-weight: var(--normal);
   line-height: 1.75em;
-}
+} */
 
 span {
   font-family: var(--secondary-font);
@@ -84,19 +84,30 @@ a {
   color: var(--white);
   font-family: var(--secondary-font);
   font-weight: var(--medium);
+  text-decoration: none;
+}
+
+/* ul {
+  list-style-type: none;
+  align-items: center;
+} */
+
+ul li {
+  display: inline-block;
+  position: relative;
 }
 
 header {
   background-color: var(--primary-bg);
   display: flex;
   justify-content: space-between;
+  font-family: var(--primary-font);
+  align-items: baseline;
+  padding: 20px;
+  margin: 10px 45px 0px 25px;
 }
 
-.navigation {
-  display: flex;
-}
-
-nav li ul {
+.nav li ul {
   display: none;
   background-color: var(--white);
   position: absolute;
@@ -104,6 +115,37 @@ nav li ul {
   top: 100%;
   padding: 0;
 }
+
+.nav li a {
+  font-family: var(--primary-font);
+  color: var(--white);
+  font-size: 1.3em;
+  padding: 0.8em 1.325em;
+}
+
+/* .nav {
+  margin: 0 auto;
+  align-items: center;
+} */
+
+.logo {
+  font-family: var(--primary-font);
+  font-weight: var(--bold);
+  font-size: 2em;
+  color: var(--white);
+  padding: 10px;
+}
+
+/* .social {
+  align-items: center;
+} */
+
+.hero-container {
+  justify-content: center;
+  margin: 27px 0 120px;
+  position: absolute;4
+}
+
 /*=======================================
     #Variables
 =========================================*/
