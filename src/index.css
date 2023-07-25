@@ -22,64 +22,75 @@
 
 :root {
   /*=======================================
-  COLORS
+    COLORS
   =========================================*/
 
-  /*=============================
-  BRAND COLORS
-  ===============================*/
-
-  --primary-color: #2292b1;
-  --gradient-star: #1b3385;
+  /*=========================
+    Brand Colors
+  ==========================*/
+  --primary: #2292b1;
+  --gradient-start: #1b3385;
   --gradient-end: #25c5c9;
-  --link-color: #abadb3;
-  --link-hover: #2292b1;
 
-  /*==============================
-  NEUTRAL COLORS
-  ================================*/
-  --primary-bg: #0a0c11;
+  /*=========================
+    Neutral Colors
+  ==========================*/
+  --background: #0a0c11;
+  --body-text: #abadb3;
   --border-color: #323438;
-  --primary-text: #ababd3;
-  --bg-sub-nav: #222;
+  --sub-menu-bg: #222;
   --white: #fff;
+
+  /*=========================
+    Utility Colors
+  ==========================*/
 
   /*=======================================
     TYPOGRAPHY
-=========================================*/
+  =========================================*/
   /* 
-  1. The Poppins font. This is the main font.
-  https://fonts.googleapis.com/css?family=Poppins
+    1. The Poppins font. This is the main font.
+    https://fonts.googleapis.com/css?family=Poppins
 
-  2. The Courier font. This is used for <pre> code.
-  https://fonts.googleapis.com/css?family=Poppins
-*/
+    2. The Courier font. This is used for <pre> code.
+    https://fonts.googleapis.com/css?family=Poppins
+  */
 
-  --base-font: 20px;
+  /*=========================
+    Font famillies
+  ==========================*/
   --primary-font: "Poppins";
-  --secondary-font: "Courier";
 
-  /*=======================================
-    FONT WEIGHTS
-=========================================*/
-
+  /*=========================
+  Font weights
+  ==========================*/
+  --thin: 100;
+  --extra-light: 200;
   --light: 300;
   --normal: 400;
   --medium: 500;
   --semi-bold: 600;
   --bold: 700;
+  --extra-bold: 800;
+  --heavy: 900;
+
+  /*=========================
+  Sizes
+  ==========================*/
+  --base-font: 20px;
 }
 
 /*=======================================
-    BREAKPOINTS
+    RESETS
 =========================================*/
-
 body {
   box-sizing: border-box;
   font-family: var(--primary-font);
   font-size: var(--base-font);
-  color: var(--link-color);
-  background: var(--primary-bg);
+  color: var(--body-text);
+  background: var(--background);
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -88,9 +99,9 @@ body {
   box-sizing: inherit;
 }
 
-/*=======================================
-    HEADING SIZES
-=========================================*/
+/*=========================
+  Heading Sizes
+==========================*/
 h1,
 h2,
 h3,
@@ -104,39 +115,31 @@ h6 {
 }
 
 h1 {
-  font-size: 4em;
-  font-weight: var(--medium);
-  line-height: 1.5em;
+  font-size: 2.1em;
+  line-height: 1.72em;
 }
 
 h2 {
-  font-size: 2em;
-  font-weight: var(--medium);
-  line-height: 2.85em;
+  font-size: 1.6em;
+  line-height: 1.29em;
+  text-transform: capitalize;
+  margin-top: 14px;
 }
 
 h3 {
-  font-size: 1.47em;
-  font-weight: var(--medium);
-  line-height: 1.92em;
-}
-
-h4 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: var(--bold);
-  line-height: 1.92em;
 }
 
+h4,
 h5 {
-  font-size: 1.2em;
   font-weight: var(--bold);
-  line-height: 1.6em;
 }
 
 h6 {
-  font-size: 1.44em;
   font-weight: var(--semi-bold);
-  line-height: 1.4em;
+  font-size: 16px;
+  color: var(--body-text);
 }
 
 ul {
@@ -145,49 +148,62 @@ ul {
   padding: 0;
 }
 
+ul li {
+  position: relative;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
 a {
-  color: var(--white);
-  font-weight: var(--medium);
-  font-size: 0.9em;
+  color: var(--body-text);
   text-decoration: none;
+  font-size: 0.9em;
   font-style: normal;
+  font-weight: var(--normal);
   line-height: 2.4em;
+  text-transform: capitalize;
 }
 
 a:hover,
-.logo:hover {
-  color: var(--primary-color);
+.logo h2:hover {
+  color: var(--primary);
 }
 
 .lowlight {
   opacity: 0.5;
 }
 
-.button-gradient {
+.gradient-button {
   padding: 15px 34.86px 16.08px 35px;
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--white);
+  border-radius: 30px;
+  font-size: 0.9em;
+  font-weight: var(--bold);
+  line-height: 1.6em;
   background: linear-gradient(
-    to right,
-    var(--gradient-star) 0%,
+    90deg,
+    var(--gradient-start) 0%,
     var(--gradient-end) 100%
   );
-  border-radius: 1.5em;
-  border: none;
-  color: var(--white);
-  font-family: var(--primary-font);
-  font-size: 0.9em;
-  line-height: 1.4em;
-  margin-top: 0.8em;
 }
 
-.button-gradient:hover {
-  color: var(--primary-bg);
+.gradient-button:hover {
   background: var(--white);
+  color: var(--background);
 }
 
 /*=======================================
     Mobile First
 =========================================*/
-
 .blocks {
   padding: 0 30px;
 }
