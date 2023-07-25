@@ -3,170 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BizBoost Mobile First</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Courier"
-    />
-
-    <link rel="stylesheet" href="index.css" />
-    <title>Bizboost Mobile First</title>
+    <link rel="stylesheet" href="src/index.css" />
   </head>
   <body>
     <section class="blocks">
-      <section>
-      <header>
-        <a href="/" class="logo">BizBoost</a>
-        <nav>
-          <ul class="nav">
-            <li>
-              <a href="#" class="selection"> Home </a>
-            </li>
-            <li>
-              <a href="#"> Templates</a>
-              <img src="./img/Flecha.svg" alt="" />
-              <ul class="sub-nav">
-                <li><a href="#">Right Sidebar</a></li>
-                <li><a href="#">No Sidebar</a></li>
-                <li><a href="#">Style Guide</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <ul class="social">
-          <li>
-            <div class="circle"></div>
-            <a
-              href="https://facebook.com/codigoingenIerooficial"
-              target="_blank"
-            >
-              <img src="./img/Facebook.svg" alt="facebook" />
+      <section class="hero">
+        <header>
+          <div class="logo">
+            <a href="/">
+              <h2>BizBoost</h2>
             </a>
-          </li>
-          <li>
-            <div class="circle"></div>
-            <a
-              href="https://twitter.com/codigoingenIerooficial"
-              target="_blank"
-            >
-              <img src="./img/Twitter.svg" alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <div class="circle"></div>
-            <a href="https://co.linkedin.com/" target="_blank">
-              <img src="./img/Linkedin.svg" alt="instagram" />
-            </a>
-          </li>
-        </ul>
-      </header>
+          </div>
+          <nav class="mobile">
+            <img src="src/img/menu.svg" alt="menu" />
+          </nav>
+          <nav class="desktop">
+            <ul>
+              <li>
+                <a href="#" class="selected">Home</a>
+              </li>
+              <li>
+                <a href="#">Templates</a>
+                <img src="src/img/arrow.svg" alt="arrow" />
+                <ul class="submenu">
+                  <li>
+                    <a href="#">Right Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="#">No Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="#">Style Guide</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
 
-      <main class="hero-container">
-        <h1 class="title">
-          We <span class="lowlight">build</span> digital experiences
-        </h1>
-        <p>
-          We collaborate with smart and creative people to build awesome
-          WordPress Full Site Editing Themes.
-        </p>
-        <button class="button-gradient">Get Started</button>
-      </main>
-      <figure>
-        <video
-          width="100%"
-          controls
-          loop
-          src="https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/video/video-featured.mp4"
-        ></video>
-      </figure>
-    </section>
+          <div class="social">
+            <ul>
+              <li>
+                <div class="circle"></div>
+                <a href="#">
+                  <img src="src/img/facebook.svg" alt="fb" />
+                </a>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <a href="#">
+                  <img src="src/img/twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <a href="#">
+                  <img src="src/img/linked.svg" alt="linkedIn" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
 
-    <!-- OUR SERVICES -->
+        <section class="main">
+          <main>
+            <div class="hero-title">
+              <h1>
+                We <span class="lowlight">build</span> digital experiences.
+              </h1>
+            </div>
+            <div class="hero-tagline">
+              We collaborate with smart and creative people to build awesome
+              WordPress Full Site Editing Themes.
+            </div>
+            <div class="hero-cta">
+              <a href="#" class="gradient-button">get started</a>
+            </div>
+          </main>
+          <div class="hero-video">
+            <figure>
+              <video
+                src="https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/video/video-featured.mp4"
+                poster="https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/images/video-featured.jpg"
+                controls
+              >
+                Video not supported
+              </video>
+            </figure>
+          </div>
+        </section>
+      </section>
 
-    <section class="our-services">
-      <div class="services-figure">
-      <img class="foto" src="./img/MoonComputer.svg" alt="moon-computer" />
-      </div>
-      <div class="our-services-layout">
-        <div class="headings">
-        <h6><span class="lowlight"> OUR SERVICES </span></h6>
-        <h2>We Solve Creative Delusions Efficiently</h2>
-        <p>
-          The display employs new techniques and technology to precisely follow
-          the curves of the design, all the way to the elegantly rounded
-          corners.
-        </p>
-        <button class="button-gradient">Get Started</button>
+      <!-- Our Services Section -->
+      <section class="our-services">
+        <div class="services-figure">
+          <figure>
+            <img src="src/img/hero-content.svg" alt="hero-content" />
+          </figure>
         </div>
-      </div>
+        <div class="our-services-layout">
+          <div class="headings">
+            <h6>OUR SERVICES</h6>
+            <h2>We solve creative delusions efficiently</h2>
+          </div>
+          <p>
+            The display employs new techniques and technology to precisely
+            follow the curves of the design, all the way to the elegantly
+            rounded corners.
+          </p>
+
+          <div class="our-services-cta">
+            <a href="#" class="gradient-button">get started</a>
+          </div>
+        </div>
+      </section>
+      <section class="big-numbers">
+        <div class="number-box">
+          <span class="number">
+            <h3>95</h3>
+          </span>
+          <p>Proyects Completed</p>
+        </div>
+        <div class="number-box">
+          <span class="number">
+            <h3>2310</h3>
+          </span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="number-box">
+          <span class="number">
+            <h3>215</h3>
+          </span>
+          <p>Hours Spent</p>
+        </div>
+        <div class="number-box">
+          <span class="number">
+            <h3>479</h3>
+          </span>
+          <p>Members</p>
+        </div>
+      </section>
     </section>
-
-    <section class="big-numbers">
-      <div class="number-box">
-        <span class="number">
-          <h3>95</h3>
-        </span>
-        <p>Projects Completed</p>
-      </div>
-      <div class="number-box">
-        <span class="number">
-          <h3>2310</h3>
-        </span>
-        <p>Happy Clients</p>
-      </div>
-      <div class="number-box">
-        <span class="number">
-          <h3>215</h3>
-        </span>
-        <p>Hours Spents</p>
-      </div>
-      <div class="number-box">
-        <span class="number">
-          <h3>479</h3>
-        </span>
-        <p>Members</p>
-      </div>
-    </section>
-
-
-    <!-- Featured content 
-      Elemento semántico HTML "figure"
-      -Se crea un class=  "Lights" con contenga:
-        - <figure> y un <img> con src: https://fse.catchthemes.com/bizboost-free/wp-conte…mes/bizboost/assets/images/featured-content-1.jpg
-        - <h2> con "Creative Lights"
-        -Un <p> con "Lorem ipsum dolor sit amet consecte tur adipiscing elit integer fermentum in orci lorem ipsum."
-      -Se crea un class=  "mobile" con contenga:
-        - <figure> y un <img> con src: https://fse.catchthemes.com/bizboost-free/wp-conte…mes/bizboost/assets/images/featured-content-2.jpg
-        - <h2> con "Mobile Photography"
-        -Un <p> con "Lorem ipsum dolor sit amet consecte tur adipiscing elit integer fermentum in orci lorem ipsum."
-      -Se crea un class=  "Camera" con contenga:
-        - <figure> y un <img> con src: https://fse.catchthemes.com/bizboost-free/wp-conte…mes/bizboost/assets/images/featured-content-3.jpg
-        - <h2> con "Vintage Camera"
-        -Un <p> con "Lorem ipsum dolor sit amet consecte tur adipiscing elit integer fermentum in orci lorem ipsum."
-      -Todos llevan un button llamado "View More" con un link-hover 
-
-    <!-- Contact us 
-      Elemento semántico HTML "address"
-      -Se crea un <h6> con "PROMOTIONAL CONTACT"
-      -Se crea un <h2> con "Ready To Work Together?"
-      -Un <a> con button que contengan "Contact Us"
-      -Al button un hover white
-    -->
-
-    <!-- Footer 
-      Elemento semántico HTML "footer"
-      - Un <span> con class ="logo" = BizBoost
-      -Se crea un class = "footer-menu"
-      -Un <h2> con "Quick Links"
-      -Se crea un <ul> con cuatro <li> que contendrán cuatro <a>: Home, Templates, Blog, Contact
-      -Un <h2> con "Customer Support"
-      -Se crea un <ul> con cuatro <li> que contendrán cuatro <a>: Support, documentation, Customization y Fag
-      -Todos los <a> tienen un hover "var (--link-hover)"
-    -->
   </body>
 </html>

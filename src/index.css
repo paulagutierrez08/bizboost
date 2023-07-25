@@ -88,6 +88,9 @@ body {
   box-sizing: inherit;
 }
 
+/*=======================================
+    HEADING SIZES
+=========================================*/
 h1,
 h2,
 h3,
@@ -156,6 +159,30 @@ a:hover,
   color: var(--primary-color);
 }
 
+.lowlight {
+  opacity: 0.5;
+}
+
+.button-gradient {
+  padding: 15px 34.86px 16.08px 35px;
+  background: linear-gradient(
+    to right,
+    var(--gradient-star) 0%,
+    var(--gradient-end) 100%
+  );
+  border-radius: 1.5em;
+  border: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin-top: 0.8em;
+}
+
+.button-gradient:hover {
+  color: var(--primary-bg);
+  background: var(--white);
+}
 p {
   font-weight: var(--light);
 }
@@ -274,31 +301,6 @@ header {
   margin-bottom: 50px;
   font-size: 1.2em;
   font-weight: var(--normal);
-}
-
-.lowlight {
-  opacity: 0.5;
-}
-
-.button-gradient {
-  padding: 15px 34.86px 16.08px 35px;
-  background: linear-gradient(
-    to right,
-    var(--gradient-star) 0%,
-    var(--gradient-end) 100%
-  );
-  border-radius: 1.5em;
-  border: none;
-  color: var(--white);
-  font-family: var(--primary-font);
-  font-size: 0.9em;
-  line-height: 1.4em;
-  margin-top: 0.8em;
-}
-
-.button-gradient:hover {
-  color: var(--primary-bg);
-  background: var(--white);
 }
 
 /* OUR SERVICES */
