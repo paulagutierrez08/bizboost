@@ -1,27 +1,84 @@
-/* global */
+/*=======================================
+    #Variables
+=========================================*/
+
+/**
+  TABLE OF CONTENTS
+
+  COLORS
+  Brand colors............................These are the main brand colors.
+  Neutral colors..........................White and black, gray sacale, secondary colors.
+  Utility colors..........................Other colors to represent states: info, warning, sucess, etc.
+
+  TYPOGRAPHY
+  Font famillies..........................The fonts used in the design system.
+  Font weights............................Font weights
+  Sizes...................................Font sizing for body text, paragraphs, inputs
+  Heading sizes...........................Font sizing for page headings
+
+  BREAKPOINTS
+  Breakpoints.............................Global responsive breakpoints definitions
+*/
+
 :root {
-  /* --baseFont: 16px; */
-  --primary-font: "Poppins";
-  --secondary-font: "Courier";
-  --white: #fff;
-  --primary-bg: #0a0c11;
-  --primary-text: #ababd3;
+  /*=======================================
+  COLORS
+  =========================================*/
+
+  /*=============================
+  BRAND COLORS
+  ===============================*/
+
   --primary-color: #2292b1;
-  --secondary-color: #1b3385;
-  --terciary-color: #25c5c9;
+  --gradient-star: #1b3385;
+  --gradient-end: #25c5c9;
   --link-color: #abadb3;
   --link-hover: #2292b1;
+
+  /*==============================
+  NEUTRAL COLORS
+  ================================*/
+  --primary-bg: #0a0c11;
+  --border-color: #323438;
+  --primary-text: #ababd3;
+  --bg-sub-nav: #222;
+  --white: #fff;
+
+  /*=======================================
+    TYPOGRAPHY
+=========================================*/
+  /* 
+  1. The Poppins font. This is the main font.
+  https://fonts.googleapis.com/css?family=Poppins
+
+  2. The Courier font. This is used for <pre> code.
+  https://fonts.googleapis.com/css?family=Poppins
+*/
+
+  --base-font: 20px;
+  --primary-font: "Poppins";
+  --secondary-font: "Courier";
+
+  /*=======================================
+    FONT WEIGHTS
+=========================================*/
+
+  --light: 300;
   --normal: 400;
   --medium: 500;
   --semi-bold: 600;
   --bold: 700;
 }
 
+/*=======================================
+    BREAKPOINTS
+=========================================*/
+
 body {
   box-sizing: border-box;
   font-family: var(--primary-font);
-  font-size: 1em;
-  color: white;
+  font-size: var(--base-font);
+  color: var(--link-color);
   background: var(--primary-bg);
 }
 
@@ -31,10 +88,22 @@ body {
   box-sizing: inherit;
 }
 
-h1 {
-  font-size: 2.7em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
   font-weight: var(--medium);
-  line-height: 4.3em;
+  color: var(--white);
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: var(--medium);
+  line-height: 1.5em;
 }
 
 h2 {
@@ -67,55 +136,204 @@ h6 {
   line-height: 1.4em;
 }
 
-h7 {
-  font-size: 1em;
-  font-weight: var(--normal);
-  line-height: 1.75em;
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
 }
 
-span {
-  font-family: var(--secondary-font);
-  font-size: 1em;
-  font-weight: var(--normal);
-  line-height: 1.75em;
+a {
+  color: var(--white);
+  font-weight: var(--medium);
+  font-size: 0.9em;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 2.4em;
 }
-/*=======================================
-    #Variables
-=========================================*/
 
-/**
-  TABLE OF CONTENTS
+a:hover,
+.logo:hover {
+  color: var(--primary-color);
+}
 
-  COLORS
-  Brand colors............................These are the main brand colors.
-  Neutral colors..........................White and black, gray sacale, secondary colors.
-  Utility colors..........................Other colors to represent states: info, warning, sucess, etc.
+p {
+  font-weight: var(--light);
+}
 
-  TYPOGRAPHY
-  Font famillies..........................The fonts used in the design system.
-  Font weights............................Font weights
-  Sizes...................................Font sizing for body text, paragraphs, inputs
-  Heading sizes...........................Font sizing for page headings
+ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
 
-  BREAKPOINTS
-  Breakpoints.............................Global responsive breakpoints definitions
-*/
+/* ------- Hero --------- */
 
-/*=======================================
-    COLORS
-=========================================*/
+/* Nav */
 
-/*=======================================
-    TYPOGRAPHY
-=========================================*/
-/* 
-  1. The Poppins font. This is the main font.
-  https://fonts.googleapis.com/css?family=Poppins
+header {
+  background-color: var(--primary-bg);
+  display: flex;
+  width: 100%;
+  height: 118.08px;
+  margin: 0 auto;
+  padding-left: 96px;
+  padding-right: 105px;
+  justify-content: space-between;
+}
 
-  2. The Courier font. This is used for <pre> code.
-  https://fonts.googleapis.com/css?family=Poppins
-*/
+.logo {
+  font-family: var(--primary-font);
+  font-weight: var(--bold);
+  font-size: 2em;
+  color: var(--white);
+  padding: 10px;
+}
 
-/*=======================================
-    BREAKPOINTS
-=========================================*/
+.nav li ul {
+  display: none;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 0;
+}
+
+.selection {
+  color: var(--primary-color);
+}
+
+.nav > li {
+  margin: 0 18px;
+}
+
+.nav li:nth-child(2) ul {
+  display: none;
+}
+
+.nav li:nth-child(2):hover ul {
+  display: block;
+}
+
+.nav li:nth-child(2) {
+  min-width: 112px;
+  position: relative;
+}
+
+.sub-nav {
+  position: absolute;
+  top: 44px;
+  left: -20px;
+  z-index: 99;
+}
+
+.sub-nav li {
+  width: 235px;
+  height: 44px;
+  background-color: var(--bg-sub-nav);
+  border-bottom: 1px solid var(--border-color);
+  padding-left: 23px;
+}
+
+.sub-nav a {
+  font-size: 0.75em;
+  font-weight: var(--normal);
+}
+
+/* Social */
+.social li {
+  flex: 0;
+  padding: 0 15px;
+  position: relative;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: 0px;
+}
+
+.circle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Main */
+
+.hero-container {
+  width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 76px;
+  padding-bottom: 70px;
+}
+
+.hero-container p {
+  margin-bottom: 50px;
+  font-size: 1.2em;
+  font-weight: var(--normal);
+}
+
+.lowlight {
+  opacity: 0.5;
+}
+
+.button-gradient {
+  padding: 15px 34.86px 16.08px 35px;
+  background: linear-gradient(
+    to right,
+    var(--gradient-star) 0%,
+    var(--gradient-end) 100%
+  );
+  border-radius: 1.5em;
+  border: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin-top: 0.8em;
+}
+
+.button-gradient:hover {
+  color: var(--primary-bg);
+  background: var(--white);
+}
+
+/* OUR SERVICES */
+
+.our-services {
+  display: flex;
+}
+
+.out-services-layout {
+  width: 700px;
+  height: 395.08px;
+  justify-content: flex-end;
+  border: 2px solid var(--tertiary-bg);
+  padding: 50px 30px;
+  background-color: var(--tertiary-bg);
+  margin: 0 auto;
+}
+
+.out-services-layout h6 {
+  font-weight: var(--semi-bold);
+  font-size: 0.8em;
+}
+
+.foto {
+  width: 660px;
+  height: 573.48px;
+}
+
+.big-numbers {
+  flex-direction: row;
+  gap: 40px;
+  padding: 0 80px;
+  margin-bottom: 131px;
+}
+
+.big-numbers > * {
+  flex: 1;
+}

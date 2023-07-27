@@ -5,75 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://fonts.google.com/specimen/Poppins?query=poppin"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.google.com/specimen/Courier+Prime?query=courier"
+      href="https://fonts.googleapis.com/css?family=Courier"
     />
-    <title>Bizboost</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <title>Bizboost Mobile First</title>
   </head>
   <body>
-    <!-- Pseudocódigo
-    Se crearán 7 elementos semánticos HTML para la distribución de la página web.
-    Los 7 elementos son:
-    1. header: Contendrá el logo, home, templates, blog, contact y social media.
-    2. main: "We build digital experiences", párrafo y botón "Get Started"
-    3. figcaption: Video
-    4. section: Imagen de computador, "We Solve Creative Delusions Efficiently",
-      párrafo, boton "Get Started" y projects completed...
-    5. figure: Featured Content, cambiar el circulo que sigue el mouse por "View More" 
-      cuando este sobre los cuadros con imagen y texto.
-    6. address: Contact Us.
-    7. footer: BizBoost, Quick links, Customer Support, Copyright y social media.
-    -->
+    <section class="blocks">
+      <section>
+      <header>
+        <a href="/" class="logo">BizBoost</a>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="#" class="selection"> Home </a>
+            </li>
+            <li>
+              <a href="#"> Templates</a>
+              <img src="./img/Flecha.svg" alt="" />
+              <ul class="sub-nav">
+                <li><a href="#">Right Sidebar</a></li>
+                <li><a href="#">No Sidebar</a></li>
+                <li><a href="#">Style Guide</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="social">
+          <li>
+            <div class="circle"></div>
+            <a
+              href="https://facebook.com/codigoingenIerooficial"
+              target="_blank"
+            >
+              <img src="./img/Facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <div class="circle"></div>
+            <a
+              href="https://twitter.com/codigoingenIerooficial"
+              target="_blank"
+            >
+              <img src="./img/Twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <div class="circle"></div>
+            <a href="https://co.linkedin.com/" target="_blank">
+              <img src="./img/Linkedin.svg" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+      </header>
 
-    <!-- -Crear un <section> que contendrá la información de Hero y main -->
-    <!-- Hero 
-      -Elemento tipo <header>
-      -Se pondrá el logo "BizBoost", se agrega un ancla que cuando se de click en el logo 
-        se vaya nuevamente a "home" o página principal
-      -Se crea un elemento <nav> de navegación que contendrá: "Home", "Templates" este desplega "Right Sidebar"
-        "No Sidebar" y "Style guide"; "Blog", "Contact" y social.
-    -->
+      <main class="hero-container">
+        <h1 class="title">
+          We <span class="lowlight">build</span> digital experiences
+        </h1>
+        <p>
+          We collaborate with smart and creative people to build awesome
+          WordPress Full Site Editing Themes.
+        </p>
+        <button class="button-gradient">Get Started</button>
+      </main>
+      <figure>
+        <video
+          width="100%"
+          controls
+          loop
+          src="https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/video/video-featured.mp4"
+        ></video>
+      </figure>
+    </section>
 
-    <!-- Main 
-      -Elemento tipo "main"
-      -Se crea un <h1> con "We build digital experiences."
-      -Se crea un <p> con "We collaborate with smart and creative 
-        people to build awesome WordPress Full Site Editing Themes."
-      -Un <button> que contengan "Get Started"
-      -Al button un hover white
-        Video 
-      -Elemento semántico HTML "figcaption"
-      - Se crea un figcaption con un class="Video"
-      - <Video> con src: https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/video/video-featured.mp4
-    -->
-    <!-- -Fin de <section> -->
+    <!-- OUR SERVICES -->
 
-    <!-- Our services 
-      -Elemento semántico HTML "section"
-      - <figure> con class= "Computer-moon" 
-      - Agregar <img> con src: https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/images/hero-content.png
-      -Se crea un <h6> con "OUR SERVICES"
-      -Se crea un <h2> con "We Solve Creative Delusions Efficiently"
-      - Un <p> con "The display employs new techniques and technology to precisely follow the curves of the design,
-        all the way to the elegantly rounded corners."
-      -Un <a> con button que contengan "Get Started"
-      -Al button un hover white
-      -Se crea un class= "Projects" con contenga:
-        - <h2> con "95"
-        -Un <p> con "Projects Completed"
-      -Se crea un class= "Clients" con contenga:
-        - <h2> con "2310"
-        -Un <p> con "Happy Clients"
-      -Se crea un class= "Hours" con contenga:
-        - <h2> con "215"
-        -Un <p> con "Hours Spents"
-      -Se crea un class= "Members" con contenga:
-        - <h2> con "479"
-        -Un <p> con "Members"
-    -->
+    <section class="our-services">
+      <div class="services-figure">
+      <img class="foto" src="./img/MoonComputer.svg" alt="moon-computer" />
+      </div>
+      <div class="our-services-layout">
+        <div class="headings">
+        <h6><span class="lowlight"> OUR SERVICES </span></h6>
+        <h2>We Solve Creative Delusions Efficiently</h2>
+        <p>
+          The display employs new techniques and technology to precisely follow
+          the curves of the design, all the way to the elegantly rounded
+          corners.
+        </p>
+        <button class="button-gradient">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="big-numbers">
+      <div class="number-box">
+        <span class="number">
+          <h3>95</h3>
+        </span>
+        <p>Projects Completed</p>
+      </div>
+      <div class="number-box">
+        <span class="number">
+          <h3>2310</h3>
+        </span>
+        <p>Happy Clients</p>
+      </div>
+      <div class="number-box">
+        <span class="number">
+          <h3>215</h3>
+        </span>
+        <p>Hours Spents</p>
+      </div>
+      <div class="number-box">
+        <span class="number">
+          <h3>479</h3>
+        </span>
+        <p>Members</p>
+      </div>
+    </section>
+
 
     <!-- Featured content 
       Elemento semántico HTML "figure"
