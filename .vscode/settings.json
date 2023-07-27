@@ -14,5 +14,6 @@
   "[typescriptreact]": {
     "editor.formatOnSave": false
   },
-  "livePreview.defaultPreviewPath": "/src/index.html"
+  "livePreview.defaultPreviewPath": "/src/index.html",
+  "liveServer.settings.port": 5501
 }
