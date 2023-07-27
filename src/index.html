@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Poppins?query=poppin"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Courier+Prime?query=courier"
+    />
+    <title>Bizboost</title>
+  </head>
+  <body>
+    <!-- Pseudocódigo
+    Se crearán 7 elementos semánticos HTML para la distribución de la página web.
+    Los 7 elementos son:
+    1. header: Contendrá el logo, home, templates, blog, contact y social media.
+    2. main: "We build digital experiences", párrafo y botón "Get Started"
+    3. figcaption: Video
+    4. section: Imagen de computador, "We Solve Creative Delusions Efficiently",
+      párrafo, boton "Get Started" y projects completed...
+    5. figure: Featured Content, cambiar el circulo que sigue el mouse por "View More" 
+      cuando este sobre los cuadros con imagen y texto.
+    6. address: Contact Us.
+    7. footer: BizBoost, Quick links, Customer Support, Copyright y social media.
+    -->
+
+    <!-- -Crear un <section> que contendrá la información de Hero y main -->
+    <!-- Hero 
+      -Elemento tipo <header>
+      -Se pondrá el logo "BizBoost", se agrega un ancla que cuando se de click en el logo 
+        se vaya nuevamente a "home" o página principal
+      -Se crea un elemento <nav> de navegación que contendrá: "Home", "Templates" este desplega "Right Sidebar"
+        "No Sidebar" y "Style guide"; "Blog", "Contact" y social.
+    -->
+
+    <!-- Main 
+      -Elemento tipo "main"
+      -Se crea un <h1> con "We build digital experiences."
+      -Se crea un <p> con "We collaborate with smart and creative 
+        people to build awesome WordPress Full Site Editing Themes."
+      -Un <button> que contengan "Get Started"
+      -Al button un hover white
+        Video 
+      -Elemento semántico HTML "figcaption"
+      - Se crea un figcaption con un class="Video"
+      - <Video> con src: https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/video/video-featured.mp4
+    -->
+    <!-- -Fin de <section> -->
+
+    <!-- Our services 
+      -Elemento semántico HTML "section"
+      - <figure> con class= "Computer-moon" 
+      - Agregar <img> con src: https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/images/hero-content.png
+      -Se crea un <h6> con "OUR SERVICES"
+      -Se crea un <h2> con "We Solve Creative Delusions Efficiently"
+      - Un <p> con "The display employs new techniques and technology to precisely follow the curves of the design,
+        all the way to the elegantly rounded corners."
+      -Un <a> con button que contengan "Get Started"
+      -Al button un hover white
+      -Se crea un class= "Projects" con contenga:
+        - <h2> con "95"
+        -Un <p> con "Projects Completed"
+      -Se crea un class= "Clients" con contenga:
+        - <h2> con "2310"
+        -Un <p> con "Happy Clients"
+      -Se crea un class= "Hours" con contenga:
+        - <h2> con "215"
+        -Un <p> con "Hours Spents"
+      -Se crea un class= "Members" con contenga:
+        - <h2> con "479"
+        -Un <p> con "Members"
+    -->
+
+    <!-- Featured content 
+      Elemento semántico HTML "figure"
+      -Se crea un class=  "Lights" con contenga:
+        - <figure> y un <img> con src: https://fse.catchthemes.com/bizboost-free/wp-conte…mes/bizboost/assets/images/featured-content-1.jpg
+        - <h2> con "Creative Lights"
+        -Un <p> con "Lorem ipsum dolor sit amet consecte tur adipiscing elit integer fermentum in orci lorem ipsum."
+      -Se crea un class=  "mobile" con contenga:
+        - <figure> y un <img> con src: https://fse.catchthemes.com/bizboost-free/wp-conte…mes/bizboost/assets/images/featured-content-2.jpg
+        - <h2> con "Mobile Photography"
+        -Un <p> con "Lorem ipsum dolor sit amet consecte tur adipiscing elit integer fermentum in orci lorem ipsum."
+      -Se crea un class=  "Camera" con contenga:
+        - <figure> y un <img> con src: https://fse.catchthemes.com/bizboost-free/wp-conte…mes/bizboost/assets/images/featured-content-3.jpg
+        - <h2> con "Vintage Camera"
+        -Un <p> con "Lorem ipsum dolor sit amet consecte tur adipiscing elit integer fermentum in orci lorem ipsum."
+      -Todos llevan un button llamado "View More" con un link-hover 
+
+    <!-- Contact us 
+      Elemento semántico HTML "address"
+      -Se crea un <h6> con "PROMOTIONAL CONTACT"
+      -Se crea un <h2> con "Ready To Work Together?"
+      -Un <a> con button que contengan "Contact Us"
+      -Al button un hover white
+    -->
+
+    <!-- Footer 
+      Elemento semántico HTML "footer"
+      - Un <span> con class ="logo" = BizBoost
+      -Se crea un class = "footer-menu"
+      -Un <h2> con "Quick Links"
+      -Se crea un <ul> con cuatro <li> que contendrán cuatro <a>: Home, Templates, Blog, Contact
+      -Un <h2> con "Customer Support"
+      -Se crea un <ul> con cuatro <li> que contendrán cuatro <a>: Support, documentation, Customization y Fag
+      -Todos los <a> tienen un hover "var (--link-hover)"
+    -->
+  </body>
+</html>
