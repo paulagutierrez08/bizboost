@@ -273,11 +273,6 @@ main > * {
   object-fit: cover;
 }
 
-/* .our-services *,
-.big-numbers * {
-  border: 1px solid var(--body-text);
-} */
-
 .our-services {
   margin: 42px 0;
 }
@@ -295,6 +290,23 @@ main > * {
 }
 
 .number-box > * {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content > * {
   display: flex;
   justify-content: center;
 }
@@ -428,4 +440,16 @@ main > * {
     align-items: flex-start;
     justify-content: center;
   }
-}
+/* 
+  .featured-content {
+    flex-direction: row;
+    gap: 30px;
+    padding: 0 80px;
+    margin-bottom: 131px;
+  }
+
+  .featured-content > * {
+    flex: 1;
+  }
+} 
+/*
