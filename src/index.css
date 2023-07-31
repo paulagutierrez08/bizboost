@@ -273,11 +273,6 @@ main > * {
   object-fit: cover;
 }
 
-/* .our-services *,
-.big-numbers * {
-  border: 1px solid var(--body-text);
-} */
-
 .our-services {
   margin: 42px 0;
 }
@@ -297,6 +292,39 @@ main > * {
 .number-box > * {
   display: flex;
   justify-content: center;
+}
+
+.featured-content-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.featured-content {
+  text-align: center;
+}
+
+.content a {
+  position: relative;
+}
+
+hr {
+  position: absolute;
+  top: 17px;
+  text-align: start;
+  border-color: var(--gradient-end);
+  width: 95px;
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 39.9px;
+}
+
+.boxes-container .content {
+  padding: 44px;
+  border: 2px solid var(--border-color);
 }
 
 /*=======================================
@@ -427,5 +455,21 @@ main > * {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+  }
+
+  .featured-content-layout {
+    gap: 44px;
+  }
+
+  .featured-content-layout > * {
+    flex: 1;
+  }
+
+  .featured-content > * {
+    flex: 1;
+  }
+
+  .boxes-container {
+    flex-direction: row;
   }
 }
