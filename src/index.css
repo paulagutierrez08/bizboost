@@ -131,14 +131,20 @@ h3 {
   font-weight: var(--bold);
 }
 
-h4,
+h4 {
+  font-size: 1.2em;
+  line-height: 1.72em;
+}
+
 h5 {
-  font-weight: var(--bold);
+  font-weight: var(--semi-bold);
+  font-size: 0.9em;
+  line-height: 1em;
 }
 
 h6 {
   font-weight: var(--semi-bold);
-  font-size: 16px;
+  font-size: 0.8em;
   color: var(--body-text);
 }
 
@@ -235,6 +241,7 @@ header {
   display: none;
 }
 
+/* Social */
 .social {
   flex: 3;
   display: flex;
@@ -244,6 +251,8 @@ header {
 .social ul {
   column-gap: 25px;
 }
+
+/* Main */
 
 main {
   display: flex;
@@ -272,6 +281,7 @@ main > * {
   max-height: 600px;
   object-fit: cover;
 }
+/* Our services */
 
 .our-services {
   margin: 42px 0;
@@ -293,6 +303,8 @@ main > * {
   display: flex;
   justify-content: center;
 }
+
+/* Fetured content */
 
 .featured-content-layout {
   display: flex;
@@ -327,6 +339,136 @@ hr {
   border: 2px solid var(--border-color);
 }
 
+/* Contact us */
+.contact-us-layout {
+  text-align: center;
+  padding: 74px 50px;
+  position: relative;
+}
+
+.contact-us-layout img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.contact-us-layout .contact-us {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-us h2 {
+  padding: 10px 0;
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+/* Footer */
+
+#email {
+  font-size: 0.7em;
+  padding: 16.1px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  color: #fff;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 218px;
+}
+
+.email-btn {
+  font-size: 0.7em;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 0;
+  padding: 14px 16px 13.7px;
+  margin-left: -7px;
+}
+
+.cta {
+  padding: 5px 0 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 0;
+}
+
+footer:first-child {
+  flex: 1;
+}
+
+footer:last-child {
+  flex: 2;
+}
+
+.newsletter {
+  flex-direction: column;
+}
+
+.newsletter h5 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.links ul {
+  flex-direction: column;
+}
+
+.links {
+  font-size: 0.8em;
+}
+
+.selected {
+  color: var(--primary);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-social ul {
+  gap: 20px;
+}
+
+.footer-social li {
+  display: flex;
+  align-items: center;
+}
+.copyright {
+  font-size: 0.65em;
+  border-top: 1px solid var(--border-color);
+  padding: 20px 30px 0;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* padding 7px */
+
 /*=======================================
     TABLET & DESKTOP BREAKPOINTS
 =========================================*/
@@ -354,6 +496,8 @@ hr {
   .blocks {
     padding: 0 88px;
   }
+
+  /* Hero */
 
   .hero {
     padding: 0 85px;
@@ -412,6 +556,7 @@ hr {
     padding-left: 30px;
   }
 
+  /* Social */
   .social {
     flex: 1;
   }
@@ -425,11 +570,14 @@ hr {
     font-size: 2.27em;
   }
 
+  /* Main */
+
   main {
     max-width: 760px;
     /* padding: 70px 320px; */
   }
 
+  /* Our services */
   .our-services {
     display: flex;
     margin: 131px 0;
@@ -457,6 +605,8 @@ hr {
     justify-content: center;
   }
 
+  /* Featured content */
+
   .featured-content-layout {
     gap: 44px;
   }
@@ -471,5 +621,62 @@ hr {
 
   .boxes-container {
     flex-direction: row;
+  }
+
+  .content img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+
+  /* Contact us */
+
+  .contact-us-layout {
+    text-align: center;
+    padding: 180px 50px;
+    position: relative;
+  }
+
+  /* Footer */
+
+  .footer-content {
+    display: block;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .links-block {
+    display: block;
+  }
+
+  .selected {
+    color: var(--primary);
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer-menu-block {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer-social {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    position: absolute;
+    left: -11px;
+    top: -10px;
+  }
+
+  .circle:hover {
+    background: rgba(255, 255, 255, 0.25);
   }
 }
