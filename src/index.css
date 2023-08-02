@@ -138,7 +138,7 @@ h4 {
 
 h5 {
   font-weight: var(--semi-bold);
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1em;
 }
 
@@ -170,7 +170,7 @@ img {
 a {
   color: var(--body-text);
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 1em;
   font-style: normal;
   font-weight: var(--normal);
   line-height: 2.4em;
@@ -390,7 +390,7 @@ hr {
   color: #fff;
   border-bottom-left-radius: 30px;
   border-top-left-radius: 30px;
-  width: 218px;
+  width: 225px;
 }
 
 .email-btn {
@@ -431,11 +431,19 @@ footer:last-child {
   padding-bottom: 30px;
 }
 
-.links ul {
+.footer-links ul {
   flex-direction: column;
 }
 
-.links {
+.footer-links {
+  font-size: 0.8em;
+}
+
+.footer-support ul {
+  flex-direction: column;
+}
+
+.footer-support {
   font-size: 0.8em;
 }
 
@@ -457,14 +465,11 @@ footer:last-child {
   align-items: center;
 }
 .copyright {
+  display: flex;
+  flex-direction: column;
   font-size: 0.65em;
   border-top: 1px solid var(--border-color);
-  padding: 20px 30px 0;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: flex-start;
+  padding: 20px 30px;
 }
 
 /* padding 7px */
@@ -626,6 +631,7 @@ footer:last-child {
   .content img:hover {
     opacity: 0.8;
     transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
   }
 
   /* Contact us */
@@ -639,9 +645,26 @@ footer:last-child {
   /* Footer */
 
   .footer-content {
-    display: block;
-    justify-content: space-between;
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    margin-left: -200px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: -420px;
+  }
+
+  .footer-support {
+    flex-direction: column;
+    margin: 10px;
+    margin-top: -200px;
   }
 
   .links-block {
@@ -652,22 +675,7 @@ footer:last-child {
     color: var(--primary);
   }
 
-  .footer-menu {
-    flex-direction: column;
-    gap: 35px;
-  }
-
-  .footer-menu-block {
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-
-  .footer-social {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .circle {
+  .circle-social {
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -676,7 +684,25 @@ footer:last-child {
     top: -10px;
   }
 
-  .circle:hover {
+  .circle-social:hover {
     background: rgba(255, 255, 255, 0.25);
+  }
+
+  .copyright {
+    flex-direction: row;
+  }
+
+  .copyright > * {
+    flex: 1;
+  }
+
+  .footer-social {
+    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .footer-social ul {
+    margin: 0;
   }
 }
